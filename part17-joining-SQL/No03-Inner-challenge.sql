@@ -38,3 +38,44 @@ SELECT country_code, size,   ----pay attention to the ',' after the 'size'. I lo
         AS popsize_group
 FROM populations
 WHERE year = 2015;
+
+/*
+Use INTO to save the result of the previous query as pop_plus. You can see an example of this in the countries_plus code in the assignment text. Make sure to include a ; at the end of your WHERE clause!
+
+Then, include another query below your first query to display all the records in pop_plus using SELECT * FROM pop_plus; so that you generate results and this will display pop_plus in query result.
+
+ */
+
+ SELECT country_code, size,
+    CASE WHEN size > 50000000 THEN 'large'
+        WHEN size > 1000000 THEN 'medium'
+        ELSE 'small' END
+        AS popsize_group
+INTO pop_plus
+FROM populations
+WHERE year = 2015;
+
+SELECT *
+FROM pop_plus
+
+/*
+Keep the first query intact that creates pop_plus using INTO.
+Remove the SELECT * FROM pop_plus; code and instead write a second query to join countries_plus AS c on the left with pop_plus AS p on the right matching on the country code fields.
+Select the name, continent, geosize_group, and popsize_group fields.
+Sort the data based on geosize_group, in ascending order so that large appears on top.
+*/
+
+SELECT country_code, size,
+    CASE WHEN size > 50000000 THEN 'large'
+        WHEN size > 1000000 THEN 'medium'
+        ELSE 'small' END
+        AS popsize_group
+INTO pop_plus
+FROM populations
+WHERE year = 2015;
+
+SELECT name, continent, geosize_group, popsize_group
+FROM countries_plus AS c
+INNER JOIN pop_plus AS p
+ON p.country_code = c.code
+ORDER BY geosize_group
