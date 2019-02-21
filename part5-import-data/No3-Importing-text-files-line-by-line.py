@@ -21,5 +21,16 @@ Print the first three lines of the file to the shell by using readline() three t
 with open('moby_dick.txt') as file:
     print(file.readline())
     #**print(next(file)) this code seems still can lead the same result.
+    print(file.readline())   
     print(file.readline())
-    print(file.readline())
+
+
+ '''result: #the second line is blank
+CHAPTER 1. Loomings.
+
+
+
+Call me Ishmael. Some years ago--never mind how long precisely--having
+
+
+ '''
