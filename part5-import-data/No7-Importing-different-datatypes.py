@@ -40,3 +40,52 @@ plt.scatter(data_float[:, 0], data_float[:, 1])
 plt.xlabel('time (min.)')
 plt.ylabel('percentage of larvae')
 plt.show()
+
+
+'''
+['Time' 'Percent']
+
+[0.    0.357]
+
+
+
+'''
+
+'''my note, the type of values in the array all change into str or floast as we setting in the np.loadtxt()
+import pandas as pd
+
+ d1=pd.DataFrame(data)
+
+d2=pd.DataFrame(data_float)
+
+In [19]: d1.info()
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 48 entries, 0 to 47
+Data columns (total 2 columns):
+0    48 non-null object
+1    48 non-null object
+dtypes: object(2)
+memory usage: 848.0+ bytes
+
+In [20]: d2.info()
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 47 entries, 0 to 46
+Data columns (total 2 columns):
+0    47 non-null float64
+1    47 non-null float64
+dtypes: float64(2)
+memory usage: 832.0 bytes
+
+
+'''
+'''
+Working with mixed datatypes (1)
+Much of the time you will need to import datasets which have different datatypes in different columns; one column may contain strings and another floats, for example. The function np.loadtxt() will freak at this. There is another function, np.genfromtxt(), which can handle such structures. If we pass dtype=None to it, it will figure out what types each column should be.
+
+Import 'titanic.csv' using the function np.genfromtxt() as follows:
+
+data = np.genfromtxt('titanic.csv', delimiter=',', names=True, dtype=None)
+Here, the first argument is the filename, the second specifies the delimiter , and the third argument names tells us there is a header. Because the data are of different types, data is an object called a structured array. Because numpy arrays have to contain elements that are all the same type, the structured array solves this by being a 1D array, where each element of the array is a row of the flat file imported. You can test this by checking out the array's shape in the shell by executing np.shape(data).
+
+Accessing rows and columns of structured arrays is super-intuitive: to get the ith row, merely execute data[i] and to get the column with name 'Fare', execute data['Fare'].
+'''
