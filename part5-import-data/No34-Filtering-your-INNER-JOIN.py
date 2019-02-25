@@ -21,3 +21,19 @@ df=pd.read_sql_query('SELECT * FROM PlaylistTrack INNER JOIN Track on PlaylistTr
 
 # Print head of DataFrame
 print(df.head())
+
+'''
+PlaylistId  TrackId  TrackId              Name  AlbumId  MediaTypeId  \
+0           1     3390     3390  One and the Same      271            2   
+1           1     3392     3392     Until We Fall      271            2   
+2           1     3393     3393     Original Fire      271            2   
+3           1     3394     3394       Broken City      271            2   
+4           1     3395     3395          Somedays      271            2   
+
+   GenreId Composer  Milliseconds    Bytes  UnitPrice  
+0       23     None        217732  3559040       0.99  
+1       23     None        230758  3766605       0.99  
+2       23     None        218916  3577821       0.99  
+3       23     None        228366  3728955       0.99  
+4       23     None        213831  3497176       0.99
+'''

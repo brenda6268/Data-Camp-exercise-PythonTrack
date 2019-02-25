@@ -45,3 +45,11 @@ print(len(df))
 
 # Print the head of the DataFrame df
 print(df.head())
+
+'''
+3
+  LastName                Title
+0    Adams      General Manager
+1  Edwards        Sales Manager
+2  Peacock  Sales Support Agent
+'''

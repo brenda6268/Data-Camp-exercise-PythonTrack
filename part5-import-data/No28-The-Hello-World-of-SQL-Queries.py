@@ -32,4 +32,14 @@ df = pd.DataFrame(rs.fetchall())
 con.close()
 
 # Print head of DataFrame df
-print(df.head())
+print(df.head())  # note: the dataframe didn't have column name. the names will be read out in next exercise
+
+'''
+ 0                                      1  2
+0  1  For Those About To Rock We Salute You  1
+1  2                      Balls to the Wall  2
+2  3                      Restless and Wild  2
+3  4                      Let There Be Rock  1
+4  5                               Big Ones  3
+
+'''

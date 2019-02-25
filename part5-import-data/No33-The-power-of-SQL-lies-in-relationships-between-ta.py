@@ -9,7 +9,7 @@ The following code has already been executed to import the necessary packages an
 
 import pandas as pd
 from sqlalchemy import create_engine
-engine = create_engine('sqlite:///Chinook.sqlite')
+engine = create_engine('sqlite:///Chinook.sqlite')   #my question: how to get know the tables list in this sqlite?
 
 #Instructions
 100 XP
@@ -28,3 +28,12 @@ with engine.connect() as con:
     df.columns=rs.keys()
 # Print head of DataFrame df
 print(df.head())
+
+'''
+                                   Title       Name
+0  For Those About To Rock We Salute You      AC/DC
+1                      Balls to the Wall     Accept
+2                      Restless and Wild     Accept
+3                      Let There Be Rock      AC/DC
+4                               Big Ones  Aerosmith
+'''

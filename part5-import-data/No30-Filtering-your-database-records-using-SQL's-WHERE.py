@@ -39,3 +39,11 @@ with engine.connect() as con:
 
 # Print the head of the DataFrame df
 print(df.head())
+
+'''
+PostalCode              Phone                Fax                    Email  
+0    T3B 0C5  +1 (403) 246-9887  +1 (403) 246-9899  michael@chinookcorp.com  
+1    T1K 5N8  +1 (403) 456-9986  +1 (403) 456-8485   robert@chinookcorp.com  
+2    T1H 1Y8  +1 (403) 467-3351  +1 (403) 467-8772    laura@chinookcorp.com
+
+'''

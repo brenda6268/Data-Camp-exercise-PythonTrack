@@ -39,3 +39,13 @@ with engine.connect() as con:
 
 # Confirm that both methods yield the same result
 print(df.equals(df1))
+
+'''
+AlbumId                                  Title  ArtistId
+0        1  For Those About To Rock We Salute You         1
+1        2                      Balls to the Wall         2
+2        3                      Restless and Wild         2
+3        4                      Let There Be Rock         1
+4        5                               Big Ones         3
+True
+'''

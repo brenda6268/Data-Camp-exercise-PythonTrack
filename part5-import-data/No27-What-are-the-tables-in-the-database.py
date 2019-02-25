@@ -26,3 +26,7 @@ table_names=engine.table_names()
 
 # Print the table names to the shell
 print(table_names)
+
+'''
+['Album', 'Artist', 'Customer', 'Employee', 'Genre', 'Invoice', 'InvoiceLine', 'MediaType', 'Playlist', 'PlaylistTrack', 'Track']
+'''
