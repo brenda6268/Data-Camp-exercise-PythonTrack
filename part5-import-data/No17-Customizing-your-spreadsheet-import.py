@@ -14,13 +14,13 @@ Parse the second sheet by index. In doing so, parse only the first column with t
 
 # Code
 # Parse the first sheet and rename the columns: df1
-df1 = xl.parse(0, skiprows=[0], names=['Country' ,'AAM due to War (2002)'])
+df1 = xl.parse(0, skiprows=[0], names=['Country' ,'AAM due to War (2002)']) #this names parameter is the name you want to rename the columns
 
 # Print the head of the DataFrame df1
 print(df1.head())
 
 # Parse the first column of the second sheet and rename the column: df2
-df2 = xl.parse(1, parse_cols=[0], skiprows=[0], names=['Country'])
+df2 = xl.parse(1, parse_cols=[0], skiprows=[0], names=['Country']) # I didn't find out the function of parameter parse_cols
 
 # Print the head of the DataFrame df2
 print(df2.head())

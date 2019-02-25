@@ -16,7 +16,7 @@ Print the head of df2 to the shell.
 
 # Code
 # Load a sheet into a DataFrame by name: df1
-df1 = xl.parse('2004')
+df1 = xl.parse('2004')     # also can use sheet index df1=xl.parse(1)
 
 # Print the head of the DataFrame df1
 print(df1.head())
@@ -26,3 +26,20 @@ df2=xl.parse(0)
 
 # Print the head of the DataFrame df2
 print(df2.head())
+
+'''
+War(country)      2004
+0  Afghanistan  9.451028
+1      Albania  0.130354
+2      Algeria  3.407277
+3      Andorra  0.000000
+4       Angola  2.597931
+  War, age-adjusted mortality due to       2002
+0                        Afghanistan  36.083990
+1                            Albania   0.128908
+2                            Algeria  18.314120
+3                            Andorra   0.000000
+4                             Angola  18.964560
+
+
+'''
