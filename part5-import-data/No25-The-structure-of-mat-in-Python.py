@@ -35,3 +35,9 @@ plt.plot(data)
 plt.xlabel('time (min.)')
 plt.ylabel('normalized fluorescence (measure of expression)')
 plt.show()
+
+'''
+dict_keys(['__header__', '__version__', '__globals__', 'rfpCyt', 'rfpNuc', 'cfpNuc', 'cfpCyt', 'yfpNuc', 'yfpCyt', 'CYratioCyt'])
+<class 'numpy.ndarray'>
+(200, 137)
+'''

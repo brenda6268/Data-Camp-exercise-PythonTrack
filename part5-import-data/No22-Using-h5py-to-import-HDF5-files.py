@@ -31,3 +31,10 @@ print(type(data))
 #for key in data:  Error: the hint said should use 'data.keys()'. But I got the same output only interate 'data'.
 for key in data.keys():
     print(key)
+
+'''
+<class 'h5py._hl.files.File'>
+meta
+quality
+strain
+'''
