@@ -25,7 +25,7 @@ import pandas as pd
 from urllib.request import urlretrieve
 # Assign url of file: url
 url='http://s3.amazonaws.com/assets.datacamp.com/course/importing_data_into_r/latitude.xls'
-urlretrieve(url,'latitude.xls')
+urlretrieve(url,'latitude.xls')   ######
 # Read in all sheets of Excel file: xl
 xl=pd.read_excel('latitude.xls',sheetname=None)
 
@@ -34,3 +34,15 @@ print(xl.keys())
 
 # Print the head of the first sheet (using its name, NOT its index)
 print(xl['1700'].head())
+
+
+'''result
+dict_keys(['1900', '1700'])
+                 country       1700
+0            Afghanistan  34.565000
+1  Akrotiri and Dhekelia  34.616667
+2                Albania  41.312000
+3                Algeria  36.720000
+4         American Samoa -14.307000
+
+'''
