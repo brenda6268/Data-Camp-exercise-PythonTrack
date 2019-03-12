@@ -24,3 +24,10 @@ with open("a_movie.json") as json_file:
 print(json_data['Title'])
 
 print(json_data['Year'])
+
+
+'''result
+
+The Social Network
+2010
+'''

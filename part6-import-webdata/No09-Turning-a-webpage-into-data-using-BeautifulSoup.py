@@ -34,3 +34,37 @@ a_tags=soup.find_all('a')
 # Print the URLs to the shell
 for link in a_tags:
     print(link.get('href'))
+
+
+
+'''result
+<title>Guido's Personal Home Page</title>
+pics.html
+http://www.washingtonpost.com/wp-srv/business/longterm/microsoft/stories/1998/raymond120398.htm
+http://metalab.unc.edu/Dave/Dr-Fun/df200004/df20000406.jpg
+http://neopythonic.blogspot.com/2016/04/kings-day-speech.html
+http://www.python.org
+Resume.html
+Publications.html
+bio.html
+http://legacy.python.org/doc/essays/
+http://legacy.python.org/doc/essays/ppt/
+interviews.html
+pics.html
+http://neopythonic.blogspot.com
+http://www.artima.com/weblogs/index.jsp?blogger=12088
+https://twitter.com/gvanrossum
+https://plus.google.com/u/0/115212051037621986145/posts
+http://www.dropbox.com
+Resume.html
+http://groups.google.com/groups?q=comp.lang.python
+http://stackoverflow.com
+guido.au
+http://legacy.python.org/doc/essays/
+images/license.jpg
+http://www.cnpbagwell.com/audio-faq
+http://sox.sourceforge.net/
+images/internetdog.gif
+
+'''
+
