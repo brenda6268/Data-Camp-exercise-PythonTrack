@@ -25,8 +25,14 @@ Within the for loop for index, row in df.iterrows():, the code currently increas
 
 # Iterate through df, counting the number of tweets in which
 # each candidate is mentioned
-for index, row in df.iterrows():
+for index, row in df.iterrows():   #######
     clinton += word_in_text('clinton', row['text'])
     trump += word_in_text('trump', row['text'])
     sanders += word_in_text('sanders', row['text'])
     cruz += word_in_text('cruz', row['text'])
+
+print([clinton, trump, sanders, cruz])
+
+'''result
+print([clinton, trump, sanders, cruz])
+'''

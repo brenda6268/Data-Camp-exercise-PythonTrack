@@ -18,3 +18,13 @@ df = pd.DataFrame(tweets_data, columns=['text','lang'])
 
 # Print head of DataFrame
 print(df.head())
+
+
+'''result
+                                                text lang
+0  b"RT @bpolitics: .@krollbondrating's Christoph...   en
+1  b'RT @HeidiAlpine: @dmartosko Cruz video found...   en
+2  b'Njihuni me Zonj\\xebn Trump !!! | Ekskluzive...   et
+3  b"Your an idiot she shouldn't have tried to gr...   en
+4  b'RT @AlanLohner: The anti-American D.C. elite...   en
+'''
