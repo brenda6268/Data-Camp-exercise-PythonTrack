@@ -26,3 +26,13 @@ data = dict(zipped)
 # Build and inspect a DataFrame from the dictionary: df
 df = pd.DataFrame(data)
 print(df)
+
+'''result
+
+[('Country', ['United States', 'Soviet Union', 'United Kingdom']), ('Total', [1118, 473, 273])]
+          Country  Total
+0   United States   1118
+1    Soviet Union    473
+2  United Kingdom    273
+
+'''
