@@ -28,3 +28,11 @@ df_log10 = np.log10(df)
 
 # Print original and new data containers
 [print(x, 'has type', type(eval(x))) for x in ['np_vals', 'np_vals_log10', 'df', 'df_log10']]
+
+'''result
+np_vals has type <class 'numpy.ndarray'>
+np_vals_log10 has type <class 'numpy.ndarray'>
+df has type <class 'pandas.core.frame.DataFrame'>
+df_log10 has type <class 'pandas.core.frame.DataFrame'>
+Out[1]: [None, None, None, None]
+'''
