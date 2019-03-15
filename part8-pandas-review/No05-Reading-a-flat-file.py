@@ -29,3 +29,46 @@ df2 = pd.read_csv(data_file, header = 0, names = new_labels)
 # Print both the DataFrames
 print(df1)
 print(df2)
+
+'''result
+
+   Year  Total Population
+0  1960      3.034971e+09
+1  1970      3.684823e+09
+2  1980      4.436590e+09
+3  1990      5.282716e+09
+4  2000      6.115974e+09
+5  2010      6.924283e+09
+
+
+   year    population
+0  1960  3.034971e+09
+1  1970  3.684823e+09
+2  1980  4.436590e+09
+3  1990  5.282716e+09
+4  2000  6.115974e+09
+5  2010  6.924283e+09
+
+'''
+
+'''my note: if I set the header=None
+
+[3]In
+df3 = pd.read_csv(data_file, header = None, names = new_labels)
+
+print(df3)
+
+
+[4]Out
+
+   year        population
+0  Year  Total Population
+1  1960      3034970564.0
+2  1970      3684822701.0
+3  1980      4436590356.0
+4  1990      5282715991.0
+5  2000      6115974486.0
+6  2010      6924282937.0
+
+
+'''

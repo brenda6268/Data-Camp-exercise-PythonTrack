@@ -29,6 +29,7 @@ print(df1.head(5))
 # Read in the file with the correct parameters: df2
 df2 = pd.read_csv(file_messy, delimiter=' ', header=3, comment='#')
 
+
 # Print the output of df2.head()
 print(df2.head())
 
@@ -37,3 +38,25 @@ df2.to_csv(file_clean, index=False)
 
 # Save the cleaned up DataFrame to an excel file without the index
 df2.to_excel('file_clean.xlsx', index=False)
+
+
+'''result
+
+                                                   The following stock data was collect on 2016-AUG-25 from an unknown source
+These kind of comments are not very useful                                                  are they?                        
+Probably should just throw this line away too          but not the next since those are column labels                        
+name Jan Feb Mar Apr May Jun Jul Aug Sep Oct No...                                                NaN                        
+# So that line you just read has all the column...                                                NaN                        
+IBM 156.08 160.01 159.81 165.22 172.25 167.15 1...                                                NaN                        
+
+
+#df2:
+     name     Jan     Feb     Mar     Apr  ...     Aug     Sep     Oct     Nov     Dec
+0     IBM  156.08  160.01  159.81  165.22  ...  152.77  145.36  146.11  137.21  137.96
+1    MSFT   45.51   43.08   42.13   43.47  ...   45.51   43.56   48.70   53.88   55.40
+2  GOOGLE  512.42  537.99  559.72  540.50  ...  636.84  617.93  663.59  735.39  755.35
+3   APPLE  110.64  125.43  125.97  127.29  ...  113.39  112.80  113.36  118.16  111.73
+
+[4 rows x 13 columns]
+
+''

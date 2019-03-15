@@ -22,3 +22,24 @@ df = pd.DataFrame(data)
 
 # Print the DataFrame
 print(df)
+
+
+'''result
+   state             city
+0     PA          Manheim
+1     PA     Preston park
+2     PA      Biglerville
+3     PA          Indiana
+4     PA     Curwensville
+5     PA            Crown
+6     PA     Harveys lake
+7     PA  Mineral springs
+8     PA        Cassville
+9     PA       Hannastown
+10    PA        Saltsburg
+11    PA      Tunkhannock
+12    PA       Pittsburgh
+13    PA        Lemasters
+14    PA       Great bend
+
+'''
