@@ -19,10 +19,12 @@ Plot a CDF for the values in fraction with 30 bins between 0 and 30%. Again, the
 
 # Code
 # This formats the plots such that they appear on separate rows
-fig, axes = plt.subplots(nrows=2, ncols=1)  ####
+fig, axes = plt.subplots(nrows=2, ncols=1)  
+####https://blog.csdn.net/htuhxf/article/details/82986440#%E4%B8%80%E3%80%81fig%2C%20ax%20%3D%20plt.subplots()%E7%9A%84%E4%BD%9C%E7%94%A8%EF%BC%9F
+#https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplot.html#matplotlib.pyplot.subplot
 
 # Plot the PDF
-df.fraction.plot(ax=axes[0], kind='hist', bins=30, normed=True, range=(0,.3))
+df.fraction.plot(ax=axes[0], kind='hist', bins=30, normed=True, range=(0,.3))  #df.fraction.median()=0.15, so set range 0~0.3
 plt.show()
 
 # Plot the CDF
