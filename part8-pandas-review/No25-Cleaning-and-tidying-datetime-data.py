@@ -19,7 +19,7 @@ Set the index of the df_dropped DataFrame to be date_times. Assign the result to
 
 # Code
 # Convert the date column to string: df_dropped['date']
-df_dropped['date'] = df_dropped['date'].astype(str) #my error:.str is used to use str method, not used to convert type.
+df_dropped['date'] = df_dropped['date'].astype(str) #my error:.str is str method, not used to convert type.
 
 # Pad leading zeros to the Time column: df_dropped['Time']
 df_dropped['Time'] = df_dropped['Time'].apply(lambda x:'{:0>4}'.format(x))
@@ -35,3 +35,9 @@ df_clean = df_dropped.set_index(date_times)
 
 # Print the output of df_clean.head()
 print(df_clean.head())
+
+'''
+ Wban      date  Time  StationType sky_condition  ... relative_humidity wind_speed wind_direction station_pressure sea_level_pressure
+2011-01-01 00:53:00  13904  20110101  0053           12        OVC045  ...                24         15            360            29.42              29.95
+2011-01-01 01:53:00  13904  20110101  0153           12        OVC049  ...                23         10            340            29.49              30.01
+'''

@@ -28,3 +28,4 @@ df_dropped = df.drop(list_to_drop,axis='columns')
 
 # Print the output of df_dropped.head()
 print(df_dropped.head())
+
