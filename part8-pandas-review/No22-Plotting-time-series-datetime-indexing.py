@@ -31,3 +31,31 @@ df.set_index('Date',inplace=True)
 # Re-plot the DataFrame to see that the axis is now datetime aware!
 df.plot()
 plt.show()
+
+
+'''note
+Before proceeding:
+In [1]: df.head()
+Out[1]: 
+   Temperature            Date
+0         46.2  20100101 00:00
+1         44.6  20100101 01:00
+2         44.1  20100101 02:00
+3         43.8  20100101 03:00
+4         43.5  20100101 04:00
+
+
+After proceeding:
+In [3]: df.head()
+Out[3]: 
+                     Temperature
+Date                            
+2010-01-01 00:00:00         46.2
+2010-01-01 01:00:00         44.6
+2010-01-01 02:00:00         44.1
+2010-01-01 03:00:00         43.8
+2010-01-01 04:00:00         43.5
+
+
+
+'''

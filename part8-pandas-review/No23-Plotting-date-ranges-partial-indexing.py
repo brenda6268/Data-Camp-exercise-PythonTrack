@@ -24,3 +24,15 @@ plt.clf()
 df.Temperature['2010-06-10':'2010-06-17'].plot()
 plt.show()
 plt.clf()
+
+
+'''mynote
+
+
+plt.close() will close the figure window entirely, 
+where plt.clf() will just clear the figure - you can still paint another plot onto it.
+More than 20 figures have been opened. Figures created through the pyplot interface 
+(matplotlib.pyplot.figure) are retained until explicitly closed and may consume too much memory.
+
+refer:https://stackoverflow.com/questions/16661790/difference-between-plt-close-and-plt-clf
+'''

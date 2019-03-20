@@ -32,3 +32,45 @@ times_tz_central = times_tz_none.dt.tz_localize('US/Central')
 
 # Convert the datetimes from US/Central to US/Pacific
 times_tz_pacific = times_tz_central.dt.tz_convert('US/Pacific')
+
+
+'''note
+#With the tz=None, we can remove the time zone information while keeping the local time (not converted to UTC):
+
+>>> tz_aware.tz_localize(None)
+
+
+
+
+
+In [4]: times_tz_none
+Out[4]: 
+33     2015-07-01 05:43:00
+55     2015-07-01 16:27:00
+91     2015-07-02 05:47:00
+113    2015-07-02 16:23:00
+134    2015-07-03 05:30:00
+...
+
+In [6]: times_tz_central.head()
+Out[6]: 
+33    2015-07-01 05:43:00-05:00
+55    2015-07-01 16:27:00-05:00
+91    2015-07-02 05:47:00-05:00
+113   2015-07-02 16:23:00-05:00
+134   2015-07-03 05:30:00-05:00
+dtype: datetime64[ns, US/Central]
+
+In [7]: times_tz_pacific.head()
+Out[7]: 
+33    2015-07-01 03:43:00-07:00
+55    2015-07-01 14:27:00-07:00
+91    2015-07-02 03:47:00-07:00
+113   2015-07-02 14:23:00-07:00
+134   2015-07-03 03:30:00-07:00
+dtype: datetime64[ns, US/Pacific]
+
+
+
+
+'''

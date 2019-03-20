@@ -24,3 +24,59 @@ differences = np.abs(ts1-ts2_interp)
 
 # Generate and print summary statistics of the differences
 print(differences.describe())
+
+'''result
+count    17.000000
+mean      2.882353
+std       1.585267
+min       0.000000
+25%       2.000000
+50%       2.666667
+75%       4.000000
+max       6.000000
+dtype: float64
+
+'''
+
+'''
+In [5]: ts1.head()
+Out[5]: 
+2016-07-01    0
+2016-07-02    1
+2016-07-03    2
+2016-07-04    3
+2016-07-05    4
+dtype: int64
+
+
+
+In [2]: ts2.head()
+Out[2]: 
+2016-07-01    0
+2016-07-04    1
+2016-07-05    2
+2016-07-06    3
+2016-07-07    4
+dtype: int64
+
+
+In [3]: ts2_interp.head()
+Out[3]: 
+2016-07-01    0.000000
+2016-07-02    0.333333
+2016-07-03    0.666667
+2016-07-04    1.000000
+2016-07-05    2.000000
+dtype: float64
+
+
+In [4]: differences.head()
+Out[4]: 
+2016-07-01    0.000000
+2016-07-02    0.666667
+2016-07-03    1.333333
+2016-07-04    2.000000
+2016-07-05    2.000000
+dtype: float64
+
+'''
