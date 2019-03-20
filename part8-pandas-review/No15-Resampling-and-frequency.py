@@ -16,3 +16,38 @@ df1 = df['Temperature'].resample('6h').mean()
 
 # Downsample to daily data and count the number of data points: df2
 df2 = df['Temperature'].resample('D').count()
+
+
+''' my note
+
+In [3]: df.head()
+Out[3]: 
+                     Temperature  DewPoint  Pressure
+Date                                                
+2010-01-01 00:00:00         46.2      37.5       1.0
+2010-01-01 01:00:00         44.6      37.1       1.0
+2010-01-01 02:00:00         44.1      36.9       1.0
+2010-01-01 03:00:00         43.8      36.9       1.0
+2010-01-01 04:00:00         43.5      36.8       1.0
+
+In [4]: df1.head()
+Out[4]: 
+Date
+2010-01-01 00:00:00    44.200000
+2010-01-01 06:00:00    45.933333
+2010-01-01 12:00:00    57.766667
+2010-01-01 18:00:00    49.450000
+2010-01-02 00:00:00    44.516667
+Freq: 6H, Name: Temperature, dtype: float64
+
+
+In [5]: df2.head()
+Out[5]: 
+Date
+2010-01-01    24
+2010-01-02    24
+2010-01-03    24
+2010-01-04    24
+2010-01-05    24
+Freq: D, Name: Temperature, dtype: int64
+'''

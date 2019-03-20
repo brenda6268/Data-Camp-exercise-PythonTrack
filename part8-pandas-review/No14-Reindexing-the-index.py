@@ -22,11 +22,26 @@ ts3 = ts2.reindex(ts1.index)
 # Reindex with fill method, using forward fill: ts4
 ts4 = ts2.reindex(ts1.index, method='ffill')
 
-# Combine ts1 + ts2: sum12
+# Combine ts1 + ts2: sum12, my note: ts2 no weekend, so in the weekend of sum12 is null
 sum12 = ts1+ts2
 
-# Combine ts1 + ts3: sum13
+# Combine ts1 + ts3: sum13  , my note :  assert sum12.all()== sum13.all()  cannot use sum12==sum13
 sum13 = ts1+ts3
 
-# Combine ts1 + ts4: sum14
+# Combine ts1 + ts4: sum14, my note: 
 sum14 = ts1+ts4
+
+
+'''result
+In [15]: ts1.head(5)
+Out[15]: 
+2016-07-01    0
+2016-07-02    1
+2016-07-03    2
+2016-07-04    3
+2016-07-05    4
+dtype: int64
+
+
+
+'''
