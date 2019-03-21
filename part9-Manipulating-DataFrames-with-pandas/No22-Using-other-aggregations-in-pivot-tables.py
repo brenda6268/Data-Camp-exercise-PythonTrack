@@ -23,11 +23,34 @@ count_by_weekday2 = users.pivot_table(index='weekday',aggfunc=len)
 print('==========================================')
 print(count_by_weekday1.equals(count_by_weekday2))
 
-'''
+'''why all value equals 2?
          city  signups  visitors
 weekday                         
 Mon         2        2         2
 Sun         2        2         2
 ==========================================
 True
+'''
+
+'''
+
+In [1]: users
+Out[1]: 
+  weekday    city  visitors  signups
+0     Sun  Austin       139        7
+1     Sun  Dallas       237       12
+2     Mon  Austin       326        3
+3     Mon  Dallas       456        5
+
+
+
+#print(count_by_weekday1)
+
+         city  signups  visitors
+weekday                         
+Mon         2        2         2
+Sun         2        2         2
+
+
+
 '''

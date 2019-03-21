@@ -16,3 +16,26 @@ by_city_day = users.pivot_table(index='weekday',columns='city')
 
 # Print by_city_day
 print(by_city_day)
+
+'''result
+
+In [1]: users
+Out[1]: 
+  weekday    city  visitors  signups
+0     Sun  Austin       139        7
+1     Sun  Dallas       237       12
+2     Mon  Austin       326        3
+3     Mon  Dallas       456        5
+
+
+# Print by_city_day
+
+        signups        visitors       
+city     Austin Dallas   Austin Dallas
+weekday                               
+Mon           3      5      326    456
+Sun           7     12      139    237
+
+
+
+'''
