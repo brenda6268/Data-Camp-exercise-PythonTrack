@@ -8,8 +8,7 @@ The life expectancy CSV file is available to you in the variable life_fname and 
 
 Instructions
 100 XP
-Instructions
-100 XP
+
 Read life_fname into a DataFrame called life and set the index to 'Country'.
 Read regions_fname into a DataFrame called regions and set the index to 'Country'.
 Group life by the region column of regions and store the result in life_by_region.
@@ -39,5 +38,7 @@ South Asia                    68.189750
 Sub-Saharan Africa            57.575080
 Name: 2010, dtype: float64
 
+
+'''
 
 '''

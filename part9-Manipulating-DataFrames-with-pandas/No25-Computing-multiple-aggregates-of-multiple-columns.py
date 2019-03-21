@@ -45,3 +45,16 @@ pclass
 3     8.0500
 Name: (fare, median), dtype: float64
 '''
+
+'''
+
+In [3]: aggregated.head()
+Out[3]: 
+         age             fare         
+         max median       max   median
+pclass                                
+1       80.0   39.0  512.3292  60.0000
+2       70.0   29.0   73.5000  15.0458
+3       74.0   24.0   69.5500   8.0500
+
+'''

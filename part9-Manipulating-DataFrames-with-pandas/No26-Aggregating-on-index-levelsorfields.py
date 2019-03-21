@@ -66,3 +66,17 @@ Year region
      Sub-Saharan Africa          9.205996e+08        76.944490   32035.0
 
 '''
+
+'''
+In [2]: gapminder.head()
+Out[2]: 
+                                  fertility    life  population  child_mortality      gdp
+Year region  Country                                                                     
+1964 America Antigua and Barbuda      4.250  63.775     58653.0            72.78   5008.0
+             Argentina                3.068  65.388  21966478.0            57.43   8227.0
+             Aruba                    4.059  67.113     57031.0              NaN   5505.0
+             Bahamas                  4.220  64.189    133709.0            48.56  18160.0
+             Barbados                 4.094  62.819    234455.0            64.70   5681.0
+
+
+'''
