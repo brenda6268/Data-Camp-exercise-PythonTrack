@@ -35,3 +35,33 @@ visitors = pd.melt(visitors_by_city_weekday, id_vars=['weekday'], value_name='vi
 
 # Print visitors
 print(visitors)
+
+
+'''result
+original dataframe:
+In [1]: visitors_by_city_weekday
+Out[1]: 
+city     Austin  Dallas
+weekday                
+Mon         326     456
+Sun         139     237
+
+#after .reset_index()
+
+city weekday  Austin  Dallas
+0        Mon     326     456
+1        Sun     139     237
+
+#after melt:
+
+  weekday    city  visitors
+0     Mon  Austin       326
+1     Sun  Austin       139
+2     Mon  Dallas       456
+3     Sun  Dallas       237
+
+
+
+
+
+'''

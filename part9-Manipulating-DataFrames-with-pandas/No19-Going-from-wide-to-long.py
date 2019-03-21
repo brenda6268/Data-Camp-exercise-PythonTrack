@@ -16,3 +16,28 @@ skinny =pd.melt(users, id_vars=['weekday','city'])
 
 # Print skinny
 print(skinny)
+
+'''
+The original dataframe:
+In [1]: users
+Out[1]: 
+  weekday    city  visitors  signups
+0     Sun  Austin       139        7
+1     Sun  Dallas       237       12
+2     Mon  Austin       326        3
+3     Mon  Dallas       456        5
+
+
+#skinny
+
+  weekday    city  variable  value
+0     Sun  Austin  visitors    139
+1     Sun  Dallas  visitors    237
+2     Mon  Austin  visitors    326
+3     Mon  Dallas  visitors    456
+4     Sun  Austin   signups      7
+5     Sun  Dallas   signups     12
+6     Mon  Austin   signups      3
+7     Mon  Dallas   signups      5
+
+'''
