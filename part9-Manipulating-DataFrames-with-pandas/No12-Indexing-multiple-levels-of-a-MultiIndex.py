@@ -28,3 +28,43 @@ CA_TX_month2 = sales.loc[(['CA','TX'],2),:]
 # Look up data for all states in month 2: all_month2
 all_month2 = sales.loc[(slice(None),2),:]
 
+'''note
+
+In [3]: sales
+Out[3]: 
+             eggs  salt  spam
+state month                  
+CA    1        47  12.0    17
+      2       110  50.0    31
+NY    1       221  89.0    72
+      2        77  87.0    20
+TX    1       132   NaN    52
+      2       205  60.0    55
+
+
+In [4]: NY_month1
+Out[4]: 
+eggs    221.0
+salt     89.0
+spam     72.0
+Name: (NY, 1), dtype: float64
+
+
+In [5]: CA_TX_month2
+Out[5]: 
+             eggs  salt  spam
+state month                  
+CA    2       110  50.0    31
+TX    2       205  60.0    55
+
+
+In [6]: all_month2
+Out[6]: 
+             eggs  salt  spam
+state month                  
+CA    2       110  50.0    31
+NY    2        77  87.0    20
+TX    2       205  60.0    55
+
+
+'''

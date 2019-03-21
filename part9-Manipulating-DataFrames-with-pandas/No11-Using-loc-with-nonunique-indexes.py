@@ -22,3 +22,20 @@ print(sales)
 
 # Access the data from 'NY'
 print(sales.loc[('NY')])
+
+'''result
+
+      month  eggs  salt  spam
+state                         
+CA         1    47  12.0    17
+CA         2   110  50.0    31
+NY         1   221  89.0    72
+NY         2    77  87.0    20
+TX         1   132   NaN    52
+TX         2   205  60.0    55
+       month  eggs  salt  spam
+state                         
+NY         1   221  89.0    72
+NY         2    77  87.0    20
+
+'''

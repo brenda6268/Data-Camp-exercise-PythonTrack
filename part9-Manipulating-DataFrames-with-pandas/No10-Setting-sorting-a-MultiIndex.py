@@ -20,3 +20,15 @@ sales = sales.sort_index()
 
 # Print the sales DataFrame
 print(sales)
+
+'''result
+             eggs  salt  spam
+state month                  
+CA    1        47  12.0    17
+      2       110  50.0    31
+NY    1       221  89.0    72
+      2        77  87.0    20
+TX    1       132   NaN    52
+      2       205  60.0    55
+
+'''

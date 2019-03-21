@@ -32,6 +32,15 @@ print(sales)
 
 #output:
 '''
+        eggs  salt  spam
+MONTHS                  
+JAN       47  12.0    17
+FEB      110  50.0    31
+MAR      221  89.0    72
+APR       77  87.0    20
+MAY      132   NaN    52
+JUN      205  60.0    55
+
 PRODUCTS  eggs  salt  spam
 MONTHS                    
 JAN         47  12.0    17
@@ -40,4 +49,5 @@ MAR        221  89.0    72
 APR         77  87.0    20
 MAY        132   NaN    52
 JUN        205  60.0    55
+
 '''
