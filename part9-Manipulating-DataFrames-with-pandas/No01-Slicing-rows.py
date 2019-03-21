@@ -21,7 +21,26 @@ print(p_counties)
 # Slice the row labels 'Potter' to 'Perry' in reverse order: p_counties_rev
 #p_counties_rev = election.loc['Perry' : 'Potter':-1, :]
 
-#p_counties_rev = election.loc['Perry' : 'Potter':-1] # my error: the order is wrong
+#p_counties_rev = election.loc['Perry' : 'Potter':-1] # my error: the order is verse.
 p_counties_rev = election.loc['Potter':'Perry':-1]  
 # Print the p_counties_rev DataFrame
 print(p_counties_rev)
+
+'''result
+
+             state   total      Obama     Romney  winner   voters
+county                                                           
+Perry           PA   18240  29.769737  68.591009  Romney    27245
+Philadelphia    PA  653598  85.224251  14.051451   Obama  1099197
+Pike            PA   23164  43.904334  54.882576  Romney    41840
+Potter          PA    7205  26.259542  72.158223  Romney    10913
+
+
+             state   total      Obama     Romney  winner   voters
+county                                                           
+Potter          PA    7205  26.259542  72.158223  Romney    10913
+Pike            PA   23164  43.904334  54.882576  Romney    41840
+Philadelphia    PA  653598  85.224251  14.051451   Obama  1099197
+Perry           PA   18240  29.769737  68.591009  Romney    27245
+
+'''

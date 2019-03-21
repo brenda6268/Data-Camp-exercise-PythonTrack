@@ -27,3 +27,22 @@ election.loc[too_close,'winner'] = np.nan
 
 # Print the output of election.info()
 print(election.info())
+
+
+'''result
+<class 'pandas.core.frame.DataFrame'>
+Index: 67 entries, Adams to York
+Data columns (total 8 columns):
+state      67 non-null object
+total      67 non-null int64
+Obama      67 non-null float64
+Romney     67 non-null float64
+winner     64 non-null object
+voters     67 non-null int64
+turnout    67 non-null float64
+margin     67 non-null float64
+dtypes: float64(4), int64(2), object(2)
+memory usage: 4.7+ KB
+None
+
+''

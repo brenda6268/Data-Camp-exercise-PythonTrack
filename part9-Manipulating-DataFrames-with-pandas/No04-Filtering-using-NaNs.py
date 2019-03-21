@@ -33,4 +33,28 @@ print(df.dropna(how='any').shape)
 print(df.dropna(how='all').shape)
 
 # Drop columns in titanic with less than 1000 non-missing values
-print(titanic.dropna(thresh=1000, axis='columns').info())
+print(titanic.dropna(thresh=1000, axis='columns').info()) ####
+
+'''result
+
+(1309, 2)
+(272, 2)
+(1069, 2)
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1309 entries, 0 to 1308
+Data columns (total 10 columns):
+pclass      1309 non-null int64
+survived    1309 non-null int64
+name        1309 non-null object
+sex         1309 non-null object
+age         1046 non-null float64
+sibsp       1309 non-null int64
+parch       1309 non-null int64
+ticket      1309 non-null object
+fare        1308 non-null float64
+embarked    1307 non-null object
+dtypes: float64(2), int64(4), object(4)
+memory usage: 102.3+ KB
+None
+
+'''

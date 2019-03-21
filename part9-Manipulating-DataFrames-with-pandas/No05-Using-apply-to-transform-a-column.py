@@ -19,10 +19,20 @@ def to_celsius(F):
 df_celsius = weather[['Mean TemperatureF','Mean Dew PointF']].apply(to_celsius)
 
 #my error: df_celsius = weather['Mean TemperatureF','Mean Dew PointF'].apply(to_celsius). it should be df.apply(fun())
-
+#can choose more than one column to operate.
 
 # Reassign the columns df_celsius
 df_celsius.columns = ['Mean TemperatureC', 'Mean Dew PointC']
 
 # Print the output of df_celsius.head()
 print(df_celsius.head())
+
+'''result
+   Mean TemperatureC  Mean Dew PointC
+0          -2.222222        -2.777778
+1          -6.111111       -11.111111
+2          -4.444444        -9.444444
+3          -2.222222        -7.222222
+4          -1.111111        -6.666667
+
+'''

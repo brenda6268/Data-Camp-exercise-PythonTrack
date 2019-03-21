@@ -24,3 +24,16 @@ three_counties = election.loc[rows,cols]
 
 # Print the three_counties DataFrame
 print(three_counties)
+
+'''result
+
+              winner      Obama     Romney
+county                                    
+Philadelphia   Obama  85.224251  14.051451
+Centre        Romney  48.948416  48.977486
+Fulton        Romney  21.096291  77.748861
+
+'''
+'''
+
+'''
