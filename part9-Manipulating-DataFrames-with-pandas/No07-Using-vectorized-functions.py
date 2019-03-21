@@ -34,3 +34,18 @@ election['turnout_zscore']=turnout_zscore
 
 # Print the output of election.head()
 print(election.head())
+
+
+'''result
+
+<class 'numpy.ndarray'>
+
+          state   total      Obama     Romney  winner  voters    turnout     margin  turnout_zscore
+county                                                                                             
+Adams        PA   41973  35.482334  63.112001  Romney   61156  68.632677  27.629667        0.853734
+Allegheny    PA  614671  56.640219  42.185820   Obama  924351  66.497575  14.454399        0.439846
+Armstrong    PA   28322  30.696985  67.901278  Romney   42147  67.198140  37.204293        0.575650
+Beaver       PA   80015  46.032619  52.637630  Romney  115157  69.483401   6.605012        1.018647
+Bedford      PA   21444  22.057452  76.986570  Romney   32189  66.619031  54.929118        0.463391
+
+'''

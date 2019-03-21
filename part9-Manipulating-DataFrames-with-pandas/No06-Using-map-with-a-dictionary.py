@@ -15,10 +15,22 @@ Print the output of election.head(). This has been done for you, so hit 'Submit 
 
 # Code
 # Create the dictionary: red_vs_blue
-red_vs_blue = {'Obama':'blue', 'Romney':'red'}
+red_vs_blue = {'Obama':'blue', 'Romney':'red'}###the key is the element in 'winner' column
 
 # Use the dictionary to map the 'winner' column to the new column: election['color']
-election['color'] =election['winner'].map(red_vs_blue)
+election['color'] =election['winner'].map(red_vs_blue)######
 
 # Print the output of election.head()
 print(election.head())
+
+'''result
+
+          state   total      Obama     Romney  winner  voters color
+county                                                             
+Adams        PA   41973  35.482334  63.112001  Romney   61156   red
+Allegheny    PA  614671  56.640219  42.185820   Obama  924351  blue
+Armstrong    PA   28322  30.696985  67.901278  Romney   42147   red
+Beaver       PA   80015  46.032619  52.637630  Romney  115157   red
+Bedford      PA   21444  22.057452  76.986570  Romney   32189   red
+
+'''
