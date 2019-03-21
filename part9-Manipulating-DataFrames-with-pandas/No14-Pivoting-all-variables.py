@@ -24,3 +24,32 @@ pivot = users.pivot(index='weekday', columns='city')
 
 # Print the pivoted DataFrame
 print(pivot)
+
+
+'''result
+
+city     Austin  Dallas
+weekday                
+Mon           3       5
+Sun           7      12
+
+
+        visitors        signups       
+city      Austin Dallas  Austin Dallas
+weekday                               
+Mon          326    456       3      5
+Sun          139    237       7     12
+
+
+'''
+
+'''
+In [1]: users
+Out[1]: 
+  weekday    city  visitors  signups
+0     Sun  Austin       139        7
+1     Sun  Dallas       237       12
+2     Mon  Austin       326        3
+3     Mon  Dallas       456        5
+
+'''

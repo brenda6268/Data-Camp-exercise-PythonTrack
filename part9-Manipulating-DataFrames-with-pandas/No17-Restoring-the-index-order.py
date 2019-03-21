@@ -33,4 +33,31 @@ newusers = newusers.sort_index()
 print(newusers)
 
 # Verify that the new DataFrame is equal to the original
-print(newusers.equals(users))
+print(newusers.equals(users))  ### (newusers == users).all().all()
+
+'''result
+In [1]: bycity
+Out[1]: 
+        visitors        signups       
+city      Austin Dallas  Austin Dallas
+weekday                               
+Mon          326    456       3      5
+Sun          139    237       7     12
+
+
+                visitors  signups
+city   weekday                   
+Austin Mon           326        3
+Dallas Mon           456        5
+Austin Sun           139        7
+Dallas Sun           237       12
+                visitors  signups
+city   weekday                   
+Austin Mon           326        3
+       Sun           139        7
+Dallas Mon           456        5
+       Sun           237       12
+True
+
+
+'''

@@ -20,3 +20,32 @@ print(bycity)
 
 # Stack bycity by 'city' and print it
 print(bycity.stack(level='city'))
+
+'''result
+
+In [1]: users
+Out[1]: 
+                visitors  signups
+city   weekday                   
+Austin Mon           326        3
+       Sun           139        7
+Dallas Mon           456        5
+       Sun           237       12
+
+
+        visitors        signups       
+city      Austin Dallas  Austin Dallas
+weekday                               
+Mon          326    456       3      5
+Sun          139    237       7     12
+
+
+                visitors  signups
+weekday city                     
+Mon     Austin       326        3
+        Dallas       456        5
+Sun     Austin       139        7
+        Dallas       237       12
+
+
+'''
