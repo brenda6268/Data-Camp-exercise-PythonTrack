@@ -6,8 +6,7 @@ In this exercise, you'll use these methods with a DataFrame of temperature value
 
 Instructions
 100 XP
-Instructions
-100 XP
+
 Read 'monthly_max_temp.csv' into a DataFrame called weather1 with 'Month' as the index.
 Sort the index of weather1 in alphabetical order using the .sort_index() method and store the result in weather2.
 Sort the index of weather1 in reverse alphabetical order by specifying the additional keyword argument ascending=False inside .sort_index().

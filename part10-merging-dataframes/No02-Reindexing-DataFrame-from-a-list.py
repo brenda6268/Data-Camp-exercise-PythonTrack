@@ -64,3 +64,31 @@ Dec            43.434783
 
 
 '''
+'''
+In [1]: weather1
+Out[1]: 
+       Mean TemperatureF
+Month                   
+Apr            61.956044
+Jan            32.133333
+Jul            68.934783
+Oct            43.434783
+
+
+In [2]: year
+Out[2]: 
+['Jan',
+ 'Feb',
+ 'Mar',
+ 'Apr',
+ 'May',
+ 'Jun',
+ 'Jul',
+ 'Aug',
+ 'Sep',
+ 'Oct',
+ 'Nov',
+ 'Dec']
+
+
+'''

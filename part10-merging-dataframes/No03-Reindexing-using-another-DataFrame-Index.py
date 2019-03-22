@@ -43,9 +43,19 @@ common_names = common_names.dropna()
 # Print shape of new common_names
 print(common_names.shape)
 
-''''
+'''
 (1935, 1)
 (1587, 1)
+
+
+'''
+
+
+
+
+''''
+Shape of names_1981 DataFrame: (19455, 1)
+Shape of names_1881 DataFrame: (1935, 1)
 
 
 
