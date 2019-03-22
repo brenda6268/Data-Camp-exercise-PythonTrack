@@ -35,7 +35,7 @@ print(reg_disp.loc[['United States', 'United Kingdom',  'China']])
 
 
 '''
- z(gdp)  regional spread(gdp)
+                z(gdp)  regional spread(gdp)
 Country                                       
 United States   3.013374               47855.0
 United Kingdom  0.572873               89037.0
