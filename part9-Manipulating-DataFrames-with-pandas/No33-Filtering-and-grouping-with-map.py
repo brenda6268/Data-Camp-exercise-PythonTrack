@@ -32,6 +32,7 @@ age
 over 10     0.366748
 under 10    0.609756
 Name: survived, dtype: float64
+
 age       pclass
 over 10   1         0.617555
           2         0.380392
@@ -42,3 +43,4 @@ under 10  1         0.750000
 Name: survived, dtype: float64
 
 '''
+#(p1+p2+p3)/3 != over 10(0.366748)  ???

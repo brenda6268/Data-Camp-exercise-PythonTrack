@@ -37,3 +37,17 @@ male      0.312500
 dtype: float64
 
 '''
+'''
+In [2]: titanic.head()
+Out[2]: 
+   pclass  survived                                             name     sex    age  ...    cabin  embarked boat   body                        home.dest
+0       1         1                    Allen, Miss. Elisabeth Walton  female  29.00  ...       B5         S    2    NaN                     St Louis, MO
+1       1         1                   Allison, Master. Hudson Trevor    male   0.92  ...  C22 C26         S   11    NaN  Montreal, PQ / Chesterville, ON
+2       1         0                     Allison, Miss. Helen Loraine  female   2.00  ...  C22 C26         S  NaN    NaN  Montreal, PQ / Chesterville, ON
+3       1         0             Allison, Mr. Hudson Joshua Creighton    male  30.00  ...  C22 C26         S  NaN  135.0  Montreal, PQ / Chesterville, ON
+4       1         0  Allison, Mrs. Hudson J C (Bessie Waldo Daniels)  female  25.00  ...  C22 C26         S  NaN    NaN  Montreal, PQ / Chesterville, ON
+
+[5 rows x 14 columns]
+
+
+'''
