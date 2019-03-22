@@ -14,7 +14,7 @@ Print ev_gen_uniques. This has been done for you, so hit 'Submit Answer' to see 
 # Code
 # Select columns: ev_gen
 #ev_gen = medals['Event_gender','Gender']  #my error lost outside []
-ev_gen = medals[['Event_gender','Gender']]
+ev_gen = medals[['Event_gender','Gender']]  # same as :  medals.loc[:,['Event_gender','Gender']]
 # Drop duplicate pairs: ev_gen_uniques
 #ev_gen_uniques = medals.drop_duplicates(ev_gen)  #my error
 ev_gen_uniques =ev_gen.drop_duplicates()
@@ -29,3 +29,5 @@ print(ev_gen_uniques)
 639              X  Women
 23675            W    Men
 '''
+
+#my note: this way to choose the unique combine two columns.

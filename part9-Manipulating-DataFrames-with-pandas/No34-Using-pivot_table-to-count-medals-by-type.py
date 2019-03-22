@@ -14,10 +14,10 @@ Print the first 15 rows of counted using .head(15). This has been done for you, 
 
 # Code
 # Construct the pivot table: counted
-counted = medals.pivot_table(index='NOC', values='Athlete', columns='Medal',aggfunc='count')
+counted = medals.pivot_table(index='NOC', values='Athlete', columns='Medal',aggfunc='count')##
 
 # Create the new column: counted['totals']
-counted['totals'] = counted.sum(axis='columns')
+counted['totals'] = counted.sum(axis='columns')##
 
 # Sort counted by the 'totals' column
 counted = counted.sort_values('totals', ascending=False)

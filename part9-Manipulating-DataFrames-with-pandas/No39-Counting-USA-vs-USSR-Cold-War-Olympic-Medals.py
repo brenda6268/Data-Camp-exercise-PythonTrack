@@ -39,3 +39,46 @@ USA    2
 dtype: int64
 
 '''
+
+'''
+In [2]: medals_won_by_country.head()
+Out[2]: 
+NOC      AFG  AHO  ALG   ANZ  ARG  ...  VIE  YUG  ZAM  ZIM   ZZX
+Edition                            ...                          
+1896     NaN  NaN  NaN   NaN  NaN  ...  NaN  NaN  NaN  NaN   6.0
+1900     NaN  NaN  NaN   NaN  NaN  ...  NaN  NaN  NaN  NaN  34.0
+1904     NaN  NaN  NaN   NaN  NaN  ...  NaN  NaN  NaN  NaN   8.0
+1908     NaN  NaN  NaN  19.0  NaN  ...  NaN  NaN  NaN  NaN   NaN
+1912     NaN  NaN  NaN  10.0  NaN  ...  NaN  NaN  NaN  NaN   NaN
+
+[5 rows x 138 columns]
+
+
+In [4]: cold_war_usa_urs_medals.head()
+Out[4]: 
+NOC        USA    URS
+Edition              
+1952     130.0  117.0
+1956     118.0  169.0
+1960     112.0  169.0
+1964     150.0  174.0
+1968     149.0  188.0
+
+
+In [6]: most_medals
+Out[6]: 
+Edition
+1952    USA
+1956    URS
+1960    URS
+1964    URS
+1968    URS
+1972    URS
+1976    URS
+1980    URS
+1984    USA
+1988    URS
+dtype: object
+
+
+'''
