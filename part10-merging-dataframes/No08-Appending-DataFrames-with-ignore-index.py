@@ -13,6 +13,7 @@ Extract all rows from combined_names that have the name 'Morgan'. To do this, us
 '''
 
 # Code
+
 # Add 'year' column to names_1881 and names_1981
 names_1881['year'] = 1881
 names_1981['year'] = 1981
@@ -29,7 +30,7 @@ print(combined_names.shape)
 #print(combined_names.loc[combined_names['name'].str.contain('Morgan')])#AttributeError: 'StringMethods' object has no attribute 'contain'
 print(combined_names.loc[combined_names['name']=='Morgan'])
 
-'''
+'''result
 (19455, 4)
 (1935, 4)
 (21390, 4)
