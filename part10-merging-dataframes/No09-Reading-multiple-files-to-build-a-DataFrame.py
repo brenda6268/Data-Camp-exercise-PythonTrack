@@ -33,10 +33,14 @@ for medal in medal_types:
     medal_df = pd.read_csv(file_name, header=0, index_col='Country', names=columns)
 
     # Append medal_df to medals
-    medals.append(medal_df)
+    medals.append(medal_df)  #medals is a list here
+    #In [5]: len(medals)
+    #Out[5]: 3
 
 # Concatenate medals horizontally: medals
-medals = pd.concat(medals,axis='columns')
+medals = pd.concat(medals,axis='columns')  #medal is a dataframe here
+#In [8]: type(medals)
+#Out[8]: pandas.core.frame.DataFrame
 
 # Print medals
 print(medals)
@@ -49,4 +53,13 @@ Italy              NaN   394.0   460.0
 Soviet Union     584.0   627.0   838.0
 United Kingdom   505.0   591.0   498.0
 United States   1052.0  1195.0  2088.0
+'''
+
+'''
+In [4]: medal_types
+Out[4]: ['bronze', 'silver', 'gold']
+
+In [5]: file_name
+Out[5]: 'gold_top5.csv'
+
 '''

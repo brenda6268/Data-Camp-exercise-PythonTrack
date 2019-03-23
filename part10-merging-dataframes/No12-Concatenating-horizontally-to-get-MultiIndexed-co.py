@@ -60,3 +60,36 @@ Date
 2015-02-05 22:05:03              NaN              NaN   Hooli
 2015-02-07 22:58:10  Acme Coporation              NaN     NaN
 '''
+
+
+'''
+In [2]: february
+Out[2]: 
+                            Hardware                         Software                    Service               
+                             Company   Product Units          Company   Product Units    Company  Product Units
+Date                                                                                                           
+2015-02-02 08:33:01              NaN       NaN   NaN            Hooli  Software   3.0        NaN      NaN   NaN
+2015-02-02 20:54:49        Mediacore  Hardware   9.0              NaN       NaN   NaN        NaN      NaN   NaN
+2015-02-03 14:14:18              NaN       NaN   NaN          Initech  Software  13.0        NaN      NaN   NaN
+2015-02-04 15:36:29              NaN       NaN   NaN        Streeplex  Software  13.0        NaN      NaN   NaN
+2015-02-04 21:52:45  Acme Coporation  Hardware  14.0              NaN       NaN   NaN        NaN      NaN   NaN
+2015-02-05 01:53:06              NaN       NaN   NaN  Acme Coporation  Software  19.0        NaN      NaN   NaN
+2015-02-05 22:05:03              NaN       NaN   NaN              NaN       NaN   NaN      Hooli  Service  10.0
+2015-02-07 22:58:10  Acme Coporation  Hardware   1.0              NaN       NaN   NaN        NaN      NaN   NaN
+2015-02-09 08:57:30              NaN       NaN   NaN              NaN       NaN   NaN  Streeplex  Service  19.0
+2015-02-09 13:09:55              NaN       NaN   NaN        Mediacore  Software   7.0        NaN      NaN   NaN
+2015-02-11 20:03:08              NaN       NaN   NaN          Initech  Software   7.0        NaN      NaN   NaN
+2015-02-11 22:50:44              NaN       NaN   NaN            Hooli  Software   4.0        NaN      NaN   NaN
+2015-02-16 12:09:19              NaN       NaN   NaN            Hooli  Software  10.0        NaN      NaN   NaN
+2015-02-19 10:59:33        Mediacore  Hardware  16.0              NaN       NaN   NaN        NaN      NaN   NaN
+2015-02-19 16:02:58              NaN       NaN   NaN              NaN       NaN   NaN  Mediacore  Service  10.0
+2015-02-21 05:01:26              NaN       NaN   NaN        Mediacore  Software   3.0        NaN      NaN   NaN
+2015-02-21 20:41:47            Hooli  Hardware   3.0              NaN       NaN   NaN        NaN      NaN   NaN
+2015-02-25 00:29:00              NaN       NaN   NaN              NaN       NaN   NaN    Initech  Service  10.0
+2015-02-26 08:57:45              NaN       NaN   NaN              NaN       NaN   NaN  Streeplex  Service   4.0
+2015-02-26 08:58:51              NaN       NaN   NaN              NaN       NaN   NaN  Streeplex  Service   1.0
+
+
+
+
+'''

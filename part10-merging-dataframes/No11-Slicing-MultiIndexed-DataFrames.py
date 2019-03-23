@@ -27,10 +27,10 @@ print(medals_sorted.loc[('bronze','Germany')])
 print(medals_sorted.loc['silver'])
 
 # Create alias for pd.IndexSlice: idx
-idx = pd.IndexSlice
+idx = pd.IndexSlice    ####
 
 # Print all the data on medals won by the United Kingdom
-print(medals_sorted.loc[idx[:,'United Kingdom'],:])
+print(medals_sorted.loc[idx[:,'United Kingdom'],:])  #####
 
 '''
 Total    454.0
@@ -47,4 +47,50 @@ United States   1195.0
 bronze United Kingdom  505.0
 silver United Kingdom  591.0
 gold   United Kingdom  498.0
+'''
+
+'''
+In [1]: medals
+Out[1]: 
+                        Total
+       Country               
+bronze United States   1052.0
+       Soviet Union     584.0
+       United Kingdom   505.0
+       France           475.0
+       Germany          454.0
+silver United States   1195.0
+       Soviet Union     627.0
+       United Kingdom   591.0
+       France           461.0
+       Italy            394.0
+gold   United States   2088.0
+       Soviet Union     838.0
+       United Kingdom   498.0
+       Italy            460.0
+       Germany          407.0
+
+
+In [3]: medals_sorted
+Out[3]: 
+                        Total
+       Country               
+bronze France           475.0
+       Germany          454.0
+       Soviet Union     584.0
+       United Kingdom   505.0
+       United States   1052.0
+gold   Germany          407.0
+       Italy            460.0
+       Soviet Union     838.0
+       United Kingdom   498.0
+       United States   2088.0
+silver France           461.0
+       Italy            394.0
+       Soviet Union     627.0
+       United Kingdom   591.0
+       United States   1195.0
+
+
+
 '''

@@ -27,7 +27,7 @@ print(names_1881.shape)
 print(combined_names.shape)
 
 # Print all rows that contain the name 'Morgan'
-#print(combined_names.loc[combined_names['name'].str.contain('Morgan')])#AttributeError: 'StringMethods' object has no attribute 'contain'
+
 print(combined_names.loc[combined_names['name']=='Morgan'])
 
 '''result
@@ -38,4 +38,17 @@ print(combined_names.loc[combined_names['name']=='Morgan'])
 1283   Morgan      M     23  1881
 2096   Morgan      F   1769  1981
 14390  Morgan      M    766  1981
+'''
+
+'''my note
+print(combined_names.loc[combined_names['name'].str.contains('Morgan')
+
+           name gender  count  year
+1283     Morgan      M     23  1881
+2096     Morgan      F   1769  1981
+7079    Morgana      F     14  1981
+9097    Morgann      F      9  1981
+13442  Morganne      F      5  1981
+14390    Morgan      M    766  1981
+
 '''

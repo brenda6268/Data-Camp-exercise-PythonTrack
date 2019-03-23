@@ -17,11 +17,13 @@ Create an alias for pd.IndexSlice and print all sales by 'Mediacore'. This has b
 # Code
 # Make the list of tuples: month_list
 month_list = [('january', jan), ('february', feb), ('march', mar)]
+#month_list = {'january': jan, 'february': feb, 'march': mar}   #also can use dic to iterate
 
 # Create an empty dictionary: month_dict
 month_dict = {}
 
-for month_name, month_data in month_list:
+for month_name, month_data in month_list:  
+#for month_name, month_data in month_list.items():  #use this for loop,if use month_list as dict
 
     # Group month_data: month_dict[month_name]
     month_dict[month_name] = month_data.groupby('Company').sum()
