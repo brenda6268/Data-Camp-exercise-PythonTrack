@@ -30,6 +30,123 @@ fractions_change = fractions_change.reset_index()
 print(fractions_change.head())
 print(fractions_change.tail())
 
+
+
+
+''''
+In [4]: fractions.head(20)
+Out[4]: 
+NOC      AFG  AHO       ALG       ANZ       ARG  ...  VIE       YUG       ZAM       ZIM       ZZX
+Edition                                          ...                                             
+1896     NaN  NaN       NaN       NaN       NaN  ...  NaN       NaN       NaN       NaN  0.039735
+1900     NaN  NaN       NaN       NaN       NaN  ...  NaN       NaN       NaN       NaN  0.066406
+1904     NaN  NaN       NaN       NaN       NaN  ...  NaN       NaN       NaN       NaN  0.017021
+1908     NaN  NaN       NaN  0.023632       NaN  ...  NaN       NaN       NaN       NaN       NaN
+1912     NaN  NaN       NaN  0.011299       NaN  ...  NaN       NaN       NaN       NaN       NaN
+1920     NaN  NaN       NaN       NaN       NaN  ...  NaN       NaN       NaN       NaN       NaN
+1924     NaN  NaN       NaN       NaN  0.012443  ...  NaN  0.002262       NaN       NaN       NaN
+1928     NaN  NaN       NaN       NaN  0.045070  ...  NaN  0.016901       NaN       NaN       NaN
+1932     NaN  NaN       NaN       NaN  0.006504  ...  NaN       NaN       NaN       NaN       NaN
+1936     NaN  NaN       NaN       NaN  0.012571  ...  NaN  0.001143       NaN       NaN       NaN
+1948     NaN  NaN       NaN       NaN  0.014742  ...  NaN  0.019656       NaN       NaN       NaN
+1952     NaN  NaN       NaN       NaN  0.006749  ...  NaN  0.026997       NaN       NaN       NaN
+1956     NaN  NaN       NaN       NaN  0.002260  ...  NaN  0.025989       NaN       NaN       NaN
+1960     NaN  NaN       NaN       NaN  0.004535  ...  NaN  0.019274       NaN       NaN       NaN
+1964     NaN  NaN       NaN       NaN  0.000990  ...  NaN  0.014851       NaN       NaN       NaN
+1968     NaN  NaN       NaN       NaN  0.001940  ...  NaN  0.028128       NaN       NaN       NaN
+1972     NaN  NaN       NaN       NaN  0.000844  ...  NaN  0.015190       NaN       NaN       NaN
+1976     NaN  NaN       NaN       NaN       NaN  ...  NaN  0.014559       NaN       NaN       NaN
+1980     NaN  NaN       NaN       NaN       NaN  ...  NaN  0.041096       NaN  0.011536       NaN
+1984     NaN  NaN  0.001371       NaN       NaN  ...  NaN  0.059630  0.000685       NaN       NaN
+
+[20 rows x 138 columns]
+
+In [5]: mean_fractions.head(15)
+Out[5]: 
+NOC      AFG  AHO  ALG       ANZ       ARG  ...  VIE       YUG  ZAM  ZIM       ZZX
+Edition                                     ...                                   
+1896     NaN  NaN  NaN       NaN       NaN  ...  NaN       NaN  NaN  NaN  0.039735
+1900     NaN  NaN  NaN       NaN       NaN  ...  NaN       NaN  NaN  NaN  0.053071
+1904     NaN  NaN  NaN       NaN       NaN  ...  NaN       NaN  NaN  NaN  0.041054
+1908     NaN  NaN  NaN  0.023632       NaN  ...  NaN       NaN  NaN  NaN  0.041054
+1912     NaN  NaN  NaN  0.017466       NaN  ...  NaN       NaN  NaN  NaN  0.041054
+1920     NaN  NaN  NaN  0.017466       NaN  ...  NaN       NaN  NaN  NaN  0.041054
+1924     NaN  NaN  NaN  0.017466  0.012443  ...  NaN  0.002262  NaN  NaN  0.041054
+1928     NaN  NaN  NaN  0.017466  0.028757  ...  NaN  0.009582  NaN  NaN  0.041054
+1932     NaN  NaN  NaN  0.017466  0.021339  ...  NaN  0.009582  NaN  NaN  0.041054
+1936     NaN  NaN  NaN  0.017466  0.019147  ...  NaN  0.006769  NaN  NaN  0.041054
+1948     NaN  NaN  NaN  0.017466  0.018266  ...  NaN  0.009991  NaN  NaN  0.041054
+1952     NaN  NaN  NaN  0.017466  0.016347  ...  NaN  0.013392  NaN  NaN  0.041054
+1956     NaN  NaN  NaN  0.017466  0.014334  ...  NaN  0.015491  NaN  NaN  0.041054
+1960     NaN  NaN  NaN  0.017466  0.013109  ...  NaN  0.016032  NaN  NaN  0.041054
+1964     NaN  NaN  NaN  0.017466  0.011763  ...  NaN  0.015884  NaN  NaN  0.041054
+
+[15 rows x 138 columns]
+
+
+In [3]: fractions_change.head(20)
+Out[3]: 
+NOC      AFG  AHO  ALG        ANZ         ARG  ...  VIE         YUG  ZAM  ZIM        ZZX
+Edition                                        ...                                      
+1896     NaN  NaN  NaN        NaN         NaN  ...  NaN         NaN  NaN  NaN        NaN
+1900     NaN  NaN  NaN        NaN         NaN  ...  NaN         NaN  NaN  NaN  33.561198
+1904     NaN  NaN  NaN        NaN         NaN  ...  NaN         NaN  NaN  NaN -22.642384
+1908     NaN  NaN  NaN        NaN         NaN  ...  NaN         NaN  NaN  NaN   0.000000
+1912     NaN  NaN  NaN -26.092774         NaN  ...  NaN         NaN  NaN  NaN   0.000000
+1920     NaN  NaN  NaN   0.000000         NaN  ...  NaN         NaN  NaN  NaN   0.000000
+1924     NaN  NaN  NaN   0.000000         NaN  ...  NaN         NaN  NaN  NaN   0.000000
+1928     NaN  NaN  NaN   0.000000  131.101152  ...  NaN  323.521127  NaN  NaN   0.000000
+1932     NaN  NaN  NaN   0.000000  -25.794206  ...  NaN    0.000000  NaN  NaN   0.000000
+1936     NaN  NaN  NaN   0.000000  -10.271982  ...  NaN  -29.357594  NaN  NaN   0.000000
+1948     NaN  NaN  NaN   0.000000   -4.601500  ...  NaN   47.596769  NaN  NaN   0.000000
+1952     NaN  NaN  NaN   0.000000  -10.508545  ...  NaN   34.043608  NaN  NaN   0.000000
+1956     NaN  NaN  NaN   0.000000  -12.310760  ...  NaN   15.677209  NaN  NaN   0.000000
+1960     NaN  NaN  NaN   0.000000   -8.545209  ...  NaN    3.488616  NaN  NaN   0.000000
+1964     NaN  NaN  NaN   0.000000  -10.271938  ...  NaN   -0.920274  NaN  NaN   0.000000
+1968     NaN  NaN  NaN   0.000000   -8.350855  ...  NaN    8.564598  NaN  NaN   0.000000
+1972     NaN  NaN  NaN   0.000000   -8.379289  ...  NaN   -1.191550  NaN  NaN   0.000000
+1976     NaN  NaN  NaN   0.000000    0.000000  ...  NaN   -1.323044  NaN  NaN   0.000000
+1980     NaN  NaN  NaN   0.000000    0.000000  ...  NaN   12.034867  NaN  NaN   0.000000
+1984     NaN  NaN  NaN   0.000000    0.000000  ...  NaN   16.657914  NaN  0.0   0.000000
+
+[20 rows x 138 columns]
+
+In [2]: fractions.index
+Out[2]: Int64Index([1896, 1900, 1904, 1908, 1912, 1920, 1924, 1928, 1932, 1936, 1948, 1952, 1956, 1960, 1964, 1968, 1972, 1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008], dtype='int64', name='Edition')
+ 
+ fractions_change = fractions_change.reset_index()
+
+
+In [5]: fractions_change.head(20)
+Out[5]: 
+NOC  Edition  AFG  AHO  ALG        ANZ  ...  VIE         YUG  ZAM  ZIM        ZZX
+0       1896  NaN  NaN  NaN        NaN  ...  NaN         NaN  NaN  NaN        NaN
+1       1900  NaN  NaN  NaN        NaN  ...  NaN         NaN  NaN  NaN  33.561198
+2       1904  NaN  NaN  NaN        NaN  ...  NaN         NaN  NaN  NaN -22.642384
+3       1908  NaN  NaN  NaN        NaN  ...  NaN         NaN  NaN  NaN   0.000000
+4       1912  NaN  NaN  NaN -26.092774  ...  NaN         NaN  NaN  NaN   0.000000
+5       1920  NaN  NaN  NaN   0.000000  ...  NaN         NaN  NaN  NaN   0.000000
+6       1924  NaN  NaN  NaN   0.000000  ...  NaN         NaN  NaN  NaN   0.000000
+7       1928  NaN  NaN  NaN   0.000000  ...  NaN  323.521127  NaN  NaN   0.000000
+8       1932  NaN  NaN  NaN   0.000000  ...  NaN    0.000000  NaN  NaN   0.000000
+9       1936  NaN  NaN  NaN   0.000000  ...  NaN  -29.357594  NaN  NaN   0.000000
+10      1948  NaN  NaN  NaN   0.000000  ...  NaN   47.596769  NaN  NaN   0.000000
+11      1952  NaN  NaN  NaN   0.000000  ...  NaN   34.043608  NaN  NaN   0.000000
+12      1956  NaN  NaN  NaN   0.000000  ...  NaN   15.677209  NaN  NaN   0.000000
+13      1960  NaN  NaN  NaN   0.000000  ...  NaN    3.488616  NaN  NaN   0.000000
+14      1964  NaN  NaN  NaN   0.000000  ...  NaN   -0.920274  NaN  NaN   0.000000
+15      1968  NaN  NaN  NaN   0.000000  ...  NaN    8.564598  NaN  NaN   0.000000
+16      1972  NaN  NaN  NaN   0.000000  ...  NaN   -1.191550  NaN  NaN   0.000000
+17      1976  NaN  NaN  NaN   0.000000  ...  NaN   -1.323044  NaN  NaN   0.000000
+18      1980  NaN  NaN  NaN   0.000000  ...  NaN   12.034867  NaN  NaN   0.000000
+19      1984  NaN  NaN  NaN   0.000000  ...  NaN   16.657914  NaN  0.0   0.000000
+
+[20 rows x 139 columns]
+
+In [6]: fractions_change.index
+Out[6]: RangeIndex(start=0, stop=26, step=1)
+
+'''
 '''
 NOC  Edition  AFG  AHO  ALG        ANZ  ARG  ARM        AUS        AUT  AZE  \
 0       1896  NaN  NaN  NaN        NaN  NaN  NaN        NaN        NaN  NaN   

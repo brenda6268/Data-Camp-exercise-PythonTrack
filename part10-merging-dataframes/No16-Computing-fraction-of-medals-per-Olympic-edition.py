@@ -31,6 +31,89 @@ print(fractions.head())
 print(fractions.tail())
 
 '''
+In [2]: totals
+Out[2]: 
+         Grand Total         City                     Country
+Edition                                                      
+1896             151       Athens                      Greece
+1900             512        Paris                      France
+1904             470    St. Louis               United States
+1908             804       London              United Kingdom
+1912             885    Stockholm                      Sweden
+1920            1298      Antwerp                     Belgium
+1924             884        Paris                      France
+1928             710    Amsterdam                 Netherlands
+1932             615  Los Angeles               United States
+1936             875       Berlin                     Germany
+1948             814       London              United Kingdom
+1952             889     Helsinki                     Finland
+1956             885    Melbourne                   Australia
+1960             882         Rome                       Italy
+1964            1010        Tokyo                       Japan
+1968            1031  Mexico City                      Mexico
+1972            1185       Munich  West Germany (now Germany)
+1976            1305     Montreal                      Canada
+1980            1387       Moscow       U.S.S.R. (now Russia)
+1984            1459  Los Angeles               United States
+1988            1546        Seoul                 South Korea
+1992            1705    Barcelona                       Spain
+1996            1859      Atlanta               United States
+2000            2015       Sydney                   Australia
+2004            1998       Athens                      Greece
+2008            2042      Beijing                       China
+
+In [3]: # Reassign totals['Grand Total']: totals
+        totals = totals['Grand Total']
+
+In [4]: totals
+Out[4]: 
+Edition
+1896     151
+1900     512
+1904     470
+1908     804
+1912     885
+1920    1298
+1924     884
+1928     710
+1932     615
+1936     875
+1948     814
+1952     889
+1956     885
+1960     882
+1964    1010
+1968    1031
+1972    1185
+1976    1305
+1980    1387
+1984    1459
+1988    1546
+1992    1705
+1996    1859
+2000    2015
+2004    1998
+2008    2042
+Name: Grand Total, dtype: int64
+
+In [5]: medal_counts.head()
+Out[5]: 
+NOC      AFG  AHO  ALG   ANZ  ARG  ...  VIE  YUG  ZAM  ZIM   ZZX
+Edition                            ...                          
+1896     NaN  NaN  NaN   NaN  NaN  ...  NaN  NaN  NaN  NaN   6.0
+1900     NaN  NaN  NaN   NaN  NaN  ...  NaN  NaN  NaN  NaN  34.0
+1904     NaN  NaN  NaN   NaN  NaN  ...  NaN  NaN  NaN  NaN   8.0
+1908     NaN  NaN  NaN  19.0  NaN  ...  NaN  NaN  NaN  NaN   NaN
+1912     NaN  NaN  NaN  10.0  NaN  ...  NaN  NaN  NaN  NaN   NaN
+
+[5 rows x 138 columns]
+
+'''
+
+
+
+'''result
+
 NOC      AFG  AHO  ALG       ANZ  ARG  ARM       AUS       AUT  AZE  BAH  \
 Edition                                                                    
 1896     NaN  NaN  NaN       NaN  NaN  NaN  0.013245  0.033113  NaN  NaN   

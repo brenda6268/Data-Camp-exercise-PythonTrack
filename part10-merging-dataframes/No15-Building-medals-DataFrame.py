@@ -31,7 +31,7 @@ import pandas as pd
 # Create empty dictionary: medals_dict
 medals_dict = {}
 
-for year in editions['Edition']:
+for year in editions['Edition']:   #pick out the years shown in editions dataframe
 
     # Create the file path: file_path
     file_path = 'summer_{:d}.csv'.format(year)
