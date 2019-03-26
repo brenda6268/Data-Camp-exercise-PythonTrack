@@ -22,13 +22,15 @@ Hit Submit Answer to examine the contents of yearly and yearly.corr(), which sho
 
 # Code
 # Merge auto and oil: merged
-merged = pd.merge_asof(auto,oil,left_on='yr',right_on='Date')
+merged = pd.merge_asof(auto,oil,left_on='yr',right_on='Date')#merged frame has 'yr' and 'Date' columns.not one of them.
 
 # Print the tail of merged
 print(merged.tail())
 
 # Resample merged: yearly
 yearly = merged.resample('A', on='Date')[['mpg','Price']].mean()
+# same as : on='yr'
+# must have on=''
 
 # Print yearly
 print(yearly)
@@ -37,6 +39,9 @@ print(yearly)
 print(yearly.corr())
 
 '''
+
+auto:
+
   mpg  cyl  displ  hp  weight  accel         yr  origin             name  \
 387  27.0    4  140.0  86    2790   15.6 1982-01-01      US  ford mustang gl   
 388  44.0    4   97.0  52    2130   24.6 1982-01-01  Europe        vw pickup   
@@ -44,12 +49,17 @@ print(yearly.corr())
 390  28.0    4  120.0  79    2625   18.6 1982-01-01      US      ford ranger   
 391  31.0    4  119.0  82    2720   19.4 1982-01-01      US       chevy s-10   
 
+
+oil:
           Date  Price  
 387 1982-01-01  33.85  
 388 1982-01-01  33.85  
 389 1982-01-01  33.85  
 390 1982-01-01  33.85  
 391 1982-01-01  33.85  
+
+
+yearly:
                   mpg  Price
 Date                        
 1970-12-31  17.689655   3.35
