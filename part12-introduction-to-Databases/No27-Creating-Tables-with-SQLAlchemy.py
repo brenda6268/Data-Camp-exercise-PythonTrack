@@ -36,3 +36,11 @@ print(repr(data))
 
 Table('data', MetaData(bind=None), Column('name', String(length=255), table=<data>), Column('count', Integer(), table=<data>), Column('amount', Float(), table=<data>), Column('valid', Boolean(), table=<data>), schema=None)
 '''
+
+'''note
+In [2]: data.constraints
+Out[2]: 
+{PrimaryKeyConstraint(),
+ CheckConstraint(<sqlalchemy.sql.elements.BinaryExpression object at 0x7fbd2f5a65c0>, name='_unnamed_', table=Table('data', MetaData(bind=None), Column('name', String(length=255), table=<data>), Column('count', Integer(), table=<data>), Column('amount', Float(), table=<data>), Column('valid', Boolean(), table=<data>), schema=None), _create_rule=<sqlalchemy.util.langhelpers.portable_instancemethod object at 0x7fbd2f5a7888>, _type_bound=True)}
+
+'''
