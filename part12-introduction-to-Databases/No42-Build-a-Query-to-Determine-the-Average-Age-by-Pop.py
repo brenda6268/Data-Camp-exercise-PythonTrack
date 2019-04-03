@@ -54,4 +54,7 @@ Out[3]: list
 
 In [4]: print(results)
 [('F', 38), ('M', 35)]
+
+In [2]: type(result)
+Out[2]: sqlalchemy.engine.result.RowProxy
 '''
