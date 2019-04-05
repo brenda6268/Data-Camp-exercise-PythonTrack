@@ -1,0 +1,16 @@
+Array orientation
+'''
+
+
+In [1]: plt.pcolor(A, cmap='Blues')
+In [2]: plt.colorbar()
+In [3]: plt.show()
+produce the pseudocolor plot above using a Numpy array A. Which of the commands below could have generated A?
+
+numpy and matplotlib.pyplot have been imported as np and plt respectively. Play around in the IPython shell with different arrays and generate pseudocolor plots from them to identify which of the below commands could have generated A.
+
+
+A = np.array([[1, 0, -1], [2, 0, 1], [1, 1, 1]])
+'''
+
+#rele:left to right, below to above ,like play lego
